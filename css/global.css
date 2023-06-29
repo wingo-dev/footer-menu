@@ -1,0 +1,102 @@
+footer {
+    position: fixed;
+    right: 0;
+    /* left: 0; */
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    background-color: #bde2f2;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: all 1s ease-in-out;
+}
+footer.shrunk {
+  left: auto; 
+  right: 0; 
+  width: 218px; /* Adjust this value to the width of the #right-corner button */
+  transition: width 1s ease-in-out, left 0.1s ease-in-out;
+}
+
+footer.shrunk .menu-button {
+  display: none; /* Hide menu buttons when shrunk */
+}
+.menu-button {
+    margin: 10px;
+    color: black;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 20px;
+    min-width: 100px;
+}
+
+.menu-button:hover {
+  background-color: #ddd;
+}
+
+.menu-button::before {
+  content: '';
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.menu-button:nth-child(odd)::before {
+  background-image: url('../img/black-dollar.png');
+}
+
+.menu-button:nth-child(even)::before {
+  background-image: url('../img/green.png');
+}
+
+.corner-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#left-corner {
+    background-image: url('../img/it.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 70px;
+    position: absolute;
+    left: 20px;
+    background-color: white;
+    transition: transform 1s ease-in-out;
+    caret-color: transparent;
+}
+#left-corner::before{
+    content: '';
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-image: url('../img/arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -25px;
+    left: 20px;
+}
+#left-corner.flip::before {
+  transform: scaleX(-1);
+}
+#right-corner {
+    background-image: url('../img/circle-number.png');
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 39px;
+    top: -34px;
+}
