@@ -11,7 +11,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    transition: all 1s ease-in-out;
+    /* transition: all 1s ease-in-out; */
 }
 footer.shrunk {
   left: auto; 
@@ -24,15 +24,18 @@ footer.shrunk .menu-button {
   display: none; /* Hide menu buttons when shrunk */
 }
 .menu-button {
-    margin: 10px;
-    color: black;
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 20px;
-    min-width: 100px;
+  margin: 10px;
+  color: black;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 20px;
+  min-width: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 24px;
 }
 
 .menu-button:hover {
@@ -42,8 +45,8 @@ footer.shrunk .menu-button {
 .menu-button::before {
   content: '';
   display: inline-block;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   margin-right: 10px;
   vertical-align: middle;
   background-size: contain;
