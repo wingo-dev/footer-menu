@@ -1,7 +1,7 @@
 footer {
     position: fixed;
     right: 0;
-    /* left: 0; */
+    left: 0;
     height: 50px;
     bottom: 0;
     width: 100%;
@@ -75,7 +75,7 @@ footer.shrunk .menu-button {
     height: 100%;
     width: 70px;
     position: absolute;
-    left: 20px;
+    left: 0px;
     background-color: white;
     transition: transform 1s ease-in-out;
     caret-color: transparent;
